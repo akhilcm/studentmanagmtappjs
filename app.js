@@ -30,8 +30,8 @@ app.use(function (req, res, next) {
     next();
 });
 
-Mongoose.connect("mongodb://localhost:27017/studentdb");
-
+// Mongoose.connect("mongodb://localhost:27017/studentdb");
+  Mongoose.connect("mongodb+srv://dbcm:dbcm@clustermy-zwohv.mongodb.net/studentdbretryWrites=true&w=majority")
 const StudModel = Mongoose.model("studentdetails",{
     admno:String,
     rollno:String,
